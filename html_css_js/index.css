@@ -1,0 +1,70 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: linear-gradient(135deg, #f8f9fa, #e3f2fd);
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+header, footer {
+  padding: 1em;
+  background: #1976d2;
+  color: white;
+  border-radius: 0 0 20px 20px;
+}
+
+main {
+  padding: 2em;
+}
+
+h2 {
+  margin-top: 2em;
+  color: #1976d2;
+}
+
+/* Part 1: CSS Animations */
+.animated-btn {
+  background: #42a5f5;
+  color: white;
+  border: none;
+  padding: 15px 25px;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.animated-btn:hover {
+  transform: scale(1.2);
+  background: #0d47a1;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background: #ef5350;
+  margin: 20px auto;
+  animation: bounce 3s infinite alternate;
+}
+
+@keyframes bounce {
+  from { transform: translateY(0); }
+  to { transform: translateY(-50px); }
+}
+
+/* Part 3: Combined */
+.magic-box {
+  width: 120px;
+  height: 120px;
+  background: #66bb6a;
+  margin: 20px auto;
+  border-radius: 15px;
+  transition: transform 1s, background 1s;
+}
+
+.magic-box.active {
+  transform: rotate(360deg) scale(1.5);
+  background: #1b5e20;
+}
